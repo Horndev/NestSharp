@@ -1,18 +1,19 @@
-﻿using NUnit.Framework;
+﻿
 using System;
 using System.Threading.Tasks;
 using System.IO;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace NestSharp.Tests
 {
     // This doesn't actually run as a test, just some code to show how to use the API for now
-    [TestFixture ()]
+    [TestClass]
     public class Tests
     {
         const string CLIENT_ID = "";
         const string CLIENT_SECRET = "";
 
-        [Test ()]
+        [TestMethod]
         public async Task Test ()
         {
             var accessToken = string.Empty;
